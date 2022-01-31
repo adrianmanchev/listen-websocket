@@ -25,7 +25,6 @@ const Controller = {
 }
 
 module.exports = (response) => {
-  console.log(response)
   let [pair, fn, data] = StreamParser(response)
   Controller[fn](pair, data)
 }
